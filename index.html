@@ -921,6 +921,36 @@
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
+ <script>
+      function openCard(element,contentId) {
+        const modal = document.getElementById("cardModal");
+        const modalText = document.getElementById("modalText");
+ 
+          // Get the image and text from the clicked card
+          const prizeText = element.querySelector(".prize-text").innerText;
+      const content = document.getElementById(contentId).innerHTML;
+ 
+          // Set the modal image and text
+          modalText.innerHTML = content;
+ 
+          // Display the modal
+          modal.style.display = "block";
+      }
+ 
+      // Function to close the card modal
+      function closeCard() {
+          const modal = document.querySelector("#cardModal");
+          modal.style.display = "none";
+      }
+ 
+      // Close modal when clicking outside of the content
+      window.onclick = function(event) {
+          const modal = document.querySelector("#cardModal");
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
     <script>
       const toggleButton = document.getElementById("menu-toggle");
       const navMenu = document.getElementById("nav-menu");
