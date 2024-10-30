@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hackcelestia</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="HackCelestia - third edition of annual hackathon organized by Banasthali Vidyapith"
+    />
+    <meta
+      name="keywords"
+      content="Hackathon,Banasthali,Viyapith,Jaipur,Rajasthan,HackCelestia,App,Team,2025"
+    />
+    <meta name="author" content="Gunjan Tewari" />
+    <meta name="author" content="Anjali Yadav>" />
+    <meta name="author" content="Aishwarya Dublish>" />
+    <meta name="author" content="Kirtika Dwivedi>" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Didact+Gothic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul id="nav-menu">
+        <li class="close-menu" id="close-menu">X</li>
+        <!-- Close Button -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#name">About Us</a></li>
+        <li><a href="#Themes">Themes</a></li>
+        <li><a href="#Timeline">Timeline</a></li>
+        <li><a href="#Guidelines">Guidelines</a></li>
+        <li><a href="#Prizes">Prizes</a></li>
+        <li><a href="#FAQs">FAQs</a></li>
+        <li>
+          <a
+            href="https://forms.gle/qXdcRf8RtF4Ph2f87"
+            style="border: 1px solid white; padding: 5px"
+            >Register</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="frame frame1" id="home">
+        <div class="video-container">
+          <video
+            src="images/BanasthalI Vidyapith.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <svg
+            class="wave-overlay"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#ffffff"
+              fill-opacity="1"
+              d="M0,224L60,192C120,160,240,96,360,101.3C480,107,600,181,720,213.3C840,245,960,235,1080,208C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="frame frame2" id="name">
+        <img class="img-back-left" src="./images/back-2.svg" />
+        <img class="img-back" src="./images/back-3.svg" />
+        <div class="frame2-left">
+          <img
+            src="./images/Sponsors/about.jpg"
+            class="responsive-img"
+            alt="Description of the image"
+          />
+        </div>
+        <div class="frame2-right">
+          <div class="name">About us!!</div>
+          <div class="content">
+            <p>
+              Welcome to Hack Celestia – the third season of our hackathon! This
+              48-hour event brings together the brightest minds from around the
+              world, challenging innovators, creators, and tech enthusiasts to
+              collaborate, compete, and bring solutions to life. Hack Celestia
+              is a space for pushing boundaries, building impactful projects,
+              and connecting with a global community of future-focused thinkers.
+            </p>
+            <p>
+              <b>International Participation </b>| Diverse Challenges | 3 Days
+              of Non-Stop Innovation
+            </p>
+            <p>
+              The countdown to brilliance begins now—don’t miss your chance to
+              be part of something extraordinary!
+            </p>
+            <p>
+              <button
+                class="button button2"
+                style="height: 70px; width: 200px"
+                onclick="window.location.href='https://forms.gle/qXdcRf8RtF4Ph2f87'"
+              >
+                Register Now
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame frame6" id="Themes">
+        <div style="background-color: #041e3f">
+          <img src="./images/back-4.svg" class="img-back" />
+          <div class="name" style="color: white">PROBLEM STATEMENTS</div>
+          <br />
+
+          <h2 style="color: white">
+            You can view the reference ppt template here:
+            <a href="Hack Celestia Template.pptx" style="color: white"
+              >Reference ppt</a
+            >
+          </h2>
+          <br />
+          <br />
+          <div class="prizes">
+            <div class="prizes-cont">
+              <div class="prize" onclick="openCard(this,'content1')">
+                <div class="prize-img">
+                  <img class="img-square" src="./images/Sponsors/aimll.jpeg" />
+                </div>
+                <div class="prize-text">AI-ML</div>
+              </div>
+              <div class="prize" onclick="openCard(this,'content2')">
+                <div class="prize-img">
+                  <img class="img-square" src="./images/Sponsors/ioott.jpeg" />
+                </div>
+                <div class="prize-text">Internet of Things (IoT)</div>
+              </div>
+              <div class="prize" onclick="openCard(this,'content3')">
+                <div class="prize-img">
+                  <img class="img-square" src="./images/Sponsors/blockk.jpeg" />
+                </div>
+                <div class="prize-text">Blockchain Technology</div>
+              </div>
+              <div class="prize" onclick="openCard(this,'content4')">
+                <div class="prize-img">
+                  <img class="img-square" src="./images/Sponsors/arvrr.jpeg" />
+                </div>
+                <div class="prize-text">AR-VR</div>
+              </div>
+              <div class="prize" onclick="openCard(this,'content5')">
+                <div class="prize-img">
+                  <img
+                    class="img-square"
+                    src="./images/Sponsors/securityy.jpeg"
+                  />
+                </div>
+                <div class="prize-text">Cybersecurity</div>
+              </div>
+              <div class="prize" onclick="openCard(this,'content6')">
+                <div class="prize-img">
+                  <img class="img-square" src="./images/Sponsors/cloudd.jpeg" />
+                </div>
+                <div class="prize-text">Cloud Computing</div>
+              </div>
+              <div class="prize" onclick="openCard(this,'content7')">
+                <div class="prize-img">
+                  <img
+                    class="img-square"
+                    src="./images/Sponsors/robotttt.jpeg"
+                  />
+                </div>
+                <div class="prize-text">Robotics/Drones</div>
+              </div>
+              <div class="prize" onclick="openCard(this,'content8')">
+                <div class="prize-img">
+                  <img class="img-square" src="./images/Sponsors/GPU.jpg" />
+                </div>
+                <div class="prize-text">
+                  High-Performance Computing (HPC) &amp; GPU Computing
+                </div>
+              </div>
+              <div class="prize" onclick="openCard(this,'content9')">
+                <div class="prize-img">
+                  <img
+                    class="img-square"
+                    src="./images/Sponsors/open.jpg"
+                    style="height: 90%"
+                  />
+                </div>
+                <div class="prize-text">Open Challenge</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./images/back-5.svg" class="img-back" />
+      </div>
+
+      <!-- Modal for displaying card details -->
+      <div id="cardModal" class="modal">
+        <span class="close" onclick="closeCard()">&times;</span>
+        <div class="modal-content">
+          <div id="modalImage" class="modal-img"></div>
+          <div id="modalText" class="modal-text"></div>
+        </div>
+      </div>
+
+      <!-- Content Data for the Modal -->
+      <div id="content1" style="display: none">
+        <ol type="1">
+          <h2>AI-ML</h2>
+          <hr />
+          <li>
+            <h3>Hackathon Assistant:</h3>
+            <p>
+              Develop a chatbot that can provide clear information about various
+              hackathons, including schedules, FAQs, events, phases, prizes,
+              collaborators, Sponsors, resources, themes/track information. This
+              chatbot should be able to answer user queries related to specific
+              hackathons. Additionally, the chatbot should cater to some of the
+              following features: multilingual support, real-time updates,
+              interactive FAQs, and resource recommendations. Also, there should
+              be a differentiating factor for available platforms
+            </p>
+          </li>
+          <li>
+            <h3>Real-Time Campus People Density Mapping System</h3>
+            <p>
+              The challenge is to develop a system that tracks and maps the
+              movement of people across a university campus in real time using
+              camera footage. Leveraging computer vision and machine learning,
+              the system should detect, identify, and monitor individuals. It
+              will visualise movement patterns on a campus-wide map or
+              dashboard, track crowd density, and provide insights into space
+              utilization. The system should also be capable of sending
+              real-time alerts for unusual activities or security breaches and
+              generating heatmaps and analytics for long-term trends.
+            </p>
+          </li>
+          <li>
+            <h3>Excessive Honking Problem:</h3>
+            <p>
+              Develop a solution to address the increasing issue of excessive
+              road honking in a solution to address the increasing issue of
+              excessive road honking in urban areas, which contributes to noise
+              pollution and impacts public health. You are tasked with creating
+              an application that utilizes machine learning in real-time
+            </p>
+          </li>
+          <li>
+            <h3>Tackling Misinformation in Media:</h3>
+            <p>
+              Misinformation across media platforms undermines public trust and
+              distorts reality. To address this issue, develop an AI-powered
+              solution that can identify and verify misleading information in
+              real-time. A tool that detects false content, cross-references it
+              with credible sources, and automates the flagging of inaccuracies,
+              ultimately promoting accurate information dissemination and
+              safeguarding viewers from deception
+            </p>
+          </li>
+          <li>
+            <h3>Unified Prompt Generation and Optimization Platform:</h3>
+            <p>
+              Design a comprehensive platform that allows users to generate,
+              optimise, and refine multi-modal prompts for a variety of
+              applications, such as creative writing, coding, music composition,
+              and art creation. The platform should enable users to input
+              context-specific parameters and receive suggestions to improve
+              prompts based on factors like creativity, specificity, and
+              clarity.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div id="content2" style="display: none">
+        <ol type="1">
+          <h2>Internet of Things (IoT)</h2>
+          <hr />
+          <li>
+            <h3>Smart Navigation:</h3>
+            <p>
+              Develop a smart navigation system using IoT technology to assist
+              visually and directionally impaired individuals with real-time,
+              step-by-step guidance through audio feedback or haptic sensors.
+              The system will detect and avoid obstacles, providing timely
+              alerts for safe navigation. Designed for both indoor and outdoor
+              environments, the system should use appropriate positioning
+              technologies to ensure accurate guidance. Users should have an
+              option to customize their preferred feedback method, whether
+              through audio or tactile cues.
+            </p>
+          </li>
+          <li>
+            <h3>Far Edge: Sustainable IoT via TinyML:</h3>
+            <p>
+              Develop sustainable IoT solutions using TinyML to perform
+              on-device analytics at the far edge without cloud dependency.
+              Focus on real-time detection of abnormal conditions like health
+              and safety violations, environmental hazards, or equipment
+              anomalies across areas like agriculture, healthcare, and smart
+              buildings.
+            </p>
+          </li>
+          <li>
+            <h3>Pet’s Monitoring:</h3>
+            <p>
+              Develop an IoT solution to monitor pets in a home or outdoor
+              environment, design sensor nodes to gather data on pets' movement
+              and environmental conditions, and incorporate geospatial tracking
+              and data analysis tools to support pet well-being and behaviour
+              monitoring. It should track activity levels, providing insights
+              into exercise and behaviour, while also monitoring environmental
+              factors like temperature and humidity to ensure pets’ comfort.
+              Health metrics such as heart rate and sleep patterns should be
+              captured through compatible wearables, with data analyzed for
+              behavioural trends and potential health issues.
+            </p>
+          </li>
+          <li>
+            <h3>Predictive Maintenance for equipment:</h3>
+            <p>
+              Create a model for predictive maintenance leveraging sensor data
+              to forecast potential failures in industrial equipment. This
+              proactive approach allows for timely maintenance, minimizing
+              downtime and optimizing operational efficiency.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div id="content3" style="display: none">
+        <ol type="1">
+          <h2>Blockchain Technology</h2>
+          <hr />
+          <li>
+            <h3>Solving One Day-to-Day Problem using Blockchain:</h3>
+            <p>
+              Pick any problem you see in your daily life and figure out how
+              blockchain can fit into finding a solution to it and why it should
+              be addressed. Provide a solution using only blockchain or
+              blockchain in conjunction with any other technology you choose.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Secure and Transparent Blockchain-Based Voting System for
+              Elections:
+            </h3>
+            <p>
+              Develop a secure and transparent blockchain-based voting system
+              that ensures tamper-proof voting while maintaining voter privacy
+              and reducing fraud.
+            </p>
+          </li>
+          <li>
+            <h3>Blockchain for Crowdsourcing:</h3>
+            <p>
+              Create a solution that can be used to gather the inputs from
+              multiple contributors, assign a quality score to each input, and
+              automatically pay tokens to the contributors based on the quality
+              score. The app should have an option of creating a crowdsourcing
+              project and setting the rules for awarding tokens. These rules
+              would be executed as Smart contracts on the blockchain network.
+              Link your solution to a real-world problem.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Blockchain-Based NFT Platform for Secure Digital Credentials in
+              Education:
+            </h3>
+            <p>
+              Build a blockchain-based platform using NFTs for secure,
+              verifiable digital credentials. The system will allow institutions
+              to issue tamper-proof certificates, provide real-time
+              verification, and enable learners to create portfolios showcasing
+              their academic and practical skills. It will feature decentralized
+              storage, global interoperability, a user-friendly interface, and
+              strong privacy controls.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div id="content4" style="display: none">
+        <ol type="1">
+          <h2>AR-VR</h2>
+          <hr />
+          <li>
+            <h3>Interactive Tools for Modern Adaptive Learning:</h3>
+            <p>
+              Traditional learning methods often fail to engage students,
+              especially in abstract subjects. Explore how technology can create
+              interactive tools that enhance engagement and improve learning
+              outcomes across disciplines. Link your solution to a real-world
+              problem.
+            </p>
+          </li>
+          <li>
+            <h3>Virtual Reality in Real Estate and Interior Design:</h3>
+            <p>
+              Real estate websites struggle to capture the true essence of
+              properties, often leading to buyer dissatisfaction. Explore how
+              virtual reality property interior experiences can create more
+              immersive and informative views, helping buyers make better
+              decisions.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Enhancing Online Shopping Experiences with AR/VR Technology:
+            </h3>
+            <p>
+              Utilize AR/VR technology to enhance online shopping by creating
+              immersive, interactive experiences that replicate the tactile and
+              in-store interactions customers value, bridging the gap between
+              physical and digital retail environments.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div id="content5" style="display: none">
+        <ol type="1">
+          <h2>Cybersecurity</h2>
+          <hr />
+          <li>
+            <h3>
+              Automated Cybersecurity Incident Detection and Response System:
+            </h3>
+            <p>
+              Build a system that automates the detection and response to
+              cybersecurity incidents, including real-time threat analysis,
+              containment measures, and reporting. Link your solution to a
+              real-world problem.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Enhancing SOC Resilience Through AI-Driven Traffic Simulation:
+            </h3>
+            <p>
+              Develop an AI-based Breach and Attack Simulator that not only
+              generates both normal and malicious network traffic to accurately
+              simulate diverse cyber attack scenarios but also incorporates a
+              multi-purpose system for conducting simulated attacks, detection,
+              and response, thereby assisting organizations in evaluating and
+              improving the capabilities of their Security Operations Center
+              (SOC)
+            </p>
+          </li>
+          <li>
+            <h3>Ransomware Detection and Mitigation System:</h3>
+            <p>
+              Devise a system capable of detecting and mitigating ransomware
+              attacks, preventing data encryption and unauthorized access to
+              critical systems.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div id="content6" style="display: none">
+        <ol type="1">
+          <h2>Cloud Computing</h2>
+          <hr />
+          <li>
+            <h3>Self-Service APIs or Connectors for Cloud Platforms:</h3>
+            <p>
+              Create different cloud connectors which can be used to orchestrate
+              tasks from Unified Self-Service cloud portals. All these connector
+              modules can be written in Python or Go and can connect to REST API
+              or RPC-based solutions. Link your solution to a real-world
+              problem.
+            </p>
+          </li>
+          <li>
+            <h3>Unified monitoring solution for VMs and Containers:</h3>
+            <p>
+              The objective of this task is to create and integrate a unified
+              monitoring solution for VMs and Container environments. The
+              Solution should have options to scrape data from different
+              required matrices and store it in an RTDB. There should be options
+              to visualize the matrices and generate alerts on required options.
+              Link your solution to a real-world problem.
+            </p>
+          </li>
+          <li>
+            <h3>Create a Vulnerability Assessment Scanner:</h3>
+            <p>
+              Develop an open-source vulnerability assessment scanner for
+              application programs and networks. This tool should integrate with
+              cloud-native orchestrators like OpenStack and Kubernetes. It
+              should be suitable for both beginners and professional security
+              testers, similar to OWASP ZAP. Link your solution to a real-world
+              problem.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div id="content7" style="display: none">
+        <ol type="1">
+          <h2>Robotics/Drones</h2>
+          <hr />
+          <li>
+            <h3>Advanced Robotic Navigation and Obstacle Detection System:</h3>
+            <p>
+              Develop an autonomous robotic system that can perform real-time
+              path detection and obstacle avoidance using advanced sensors and
+              machine learning algorithms. Additionally, the system should
+              incorporate dynamic environmental mapping and adaptive navigation
+              capabilities for complex terrains. You are tasked with creating a
+              solution that seamlessly integrates with IoT devices to enhance
+              situational awareness and decision-making across various
+              applications.
+            </p>
+          </li>
+          <li>
+            <h3>Self-Protection System for Drones Against Airborne Threats:</h3>
+            <p>
+              Drones lack a self-protection mechanism against large birds and
+              similar airborne threats, which can cause damage or failure.
+              Develop a system that enables drones to detect and avoid such
+              threats in real time, ensuring safe operation. The solution should
+              be efficient, lightweight, and adaptable to various drone models
+              and use cases.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Enhanced Stability and Load Balancing Solution in Low-Flying
+              Drones:
+            </h3>
+            <p>
+              : Drones face instability due to load balancing issues,
+              particularly at high altitudes and in strong wind conditions,
+              which affects their performance and control. Develop a solution to
+              improve drone stability by addressing load balancing and altitude
+              adjustment in high-wind environments, ensuring reliable and
+              efficient operation.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div id="content8" style="display: none">
+        <ol type="1">
+          <h2>High-Performance Computing (HPC) &amp; GPU Computing</h2>
+          <hr />
+          <li>
+            <h3>Genomic Data Acceleration for Personalized Medicine:</h3>
+            <p>
+              Build an HPC-enabled platform to accelerate genomic data
+              processing and variant analysis, enabling rapid, precise insights
+              for personalised medicine. The solution should optimise
+              large-scale sequencing, ensure data privacy, and incorporate
+              machine learning for predictive analytics, ultimately supporting
+              individualised treatment plans and faster, data-driven healthcare
+              decisions.
+            </p>
+          </li>
+          <li>
+            <h3>Large-scale graph Analytics for Pattern Discovery:</h3>
+            <p>
+              Create an HPC-powered application to perform large-scale graph
+              analytics on massive datasets (e.g., social networks, and
+              transportation systems) to uncover patterns and insights on
+              connectivity and behaviour. The solution should focus on
+              optimizing graph processing, enabling real- time analysis, and
+              ensuring scalability to handle complex networks for impactful,
+              data- driven decisions.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Generative Art Platform with GANs for Creative Customization:
+            </h3>
+            <p>
+              Design a platform powered by Generative Adversarial Networks
+              (GANs) to produce unique, AI-generated artwork with customizable
+              style parameters. Participants should focus on creating an
+              intuitive interface where users can select or adjust artistic
+              elements (e.g., colours, textures, themes) to shape the final
+              piece, making generative art accessible, personalized, and
+              inspiring for users of all skill levels.
+            </p>
+          </li>
+          <li>
+            <h3>GPU-Accelerated 3D Rendering and Neural Visualization Tool:</h3>
+            <p>
+              Develop a high- performance tool leveraging GPU computing and
+              neural rendering for fast, detailed 3D rendering and visualization
+              of complex datasets. Targeting fields like architecture,
+              engineering, and data science, the solution should enable users to
+              render realistic scenes, interact with visualizations in
+              real-time, and customize rendering parameters to explore intricate
+              data insights and designs efficiently.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div id="content9" style="display: none">
+        <ol type="1">
+          <p>
+            Participants are invited to explore their creativity by selecting
+            their own problem statement to address a unique challenge using
+            innovative technologies.
+          </p>
+        </ol>
+      </div>
+    </div>
+    <div class="frame frame4" id="Timeline">
+      <img class="img-back-left" src="./images/back-3.svg" />
+      <img class="img-back" src="./images/back-2.svg" />
+      <div class="frame4-left">
+        <img
+          src="https://i.pinimg.com/originals/1e/bb/ad/1ebbadda5cbd38662d07f54f0ee14679.gif"
+          style="border-radius: 20%"
+        />
+      </div>
+      <div class="frame4-right">
+        <div class="name">Timeline</div>
+        <div class="timeline">
+          <div class="schedule schedule-1">
+            <div class="dot"></div>
+            <div class="schedule-content">
+              <div class="schedule-date">30th October 2024</div>
+              <div class="schedule-title">
+                Registration & Idea Submission Open
+              </div>
+            </div>
+          </div>
+          <div class="schedule schedule-1">
+            <div class="dot"></div>
+            <div class="schedule-content">
+              <div class="schedule-date">30th November 2024</div>
+              <div class="schedule-title">
+                Registration & Idea Submission Close
+              </div>
+            </div>
+          </div>
+          <div class="schedule schedule-1">
+            <div class="dot"></div>
+            <div class="schedule-content">
+              <div class="schedule-date">10th December 2024</div>
+              <div class="schedule-title">Shortlisted Teams Announced</div>
+            </div>
+          </div>
+          <div class="schedule schedule-2">
+            <div class="dot"></div>
+            <div class="schedule-content">
+              <div class="schedule-date">11th - 13th January 2025</div>
+              <div class="schedule-title">Hackathon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="frame frame5" id="Guidelines">
+      <img src="./images/back-4.svg" class="img-back" />
+      <img src="./images/back-5.svg" class="img-back-bottom" />
+      <div class="frame5-content">
+        <div class="name" style="text-align: center">GUIDELINES</div>
+        <div class="guidelines">
+          <ul>
+            <li>Each team must consist of <b>4-5 members</b>.</li>
+            <li>Teams must include <b>at least 2 female members</b>.</li>
+            <li>
+              Only students <b>enrolled in colleges</b> are eligible to
+              participate.
+            </li>
+            <li>
+              Teams must be <b>formed from members within the same college.</b>
+            </li>
+            <li>
+              Teams can include participants from
+              <b>different branches and different years</b> within the same
+              college.
+            </li>
+            <li>
+              <b>Only female participants</b> are allowed to attend the
+              hackathon in person at the Banasthali campus.
+            </li>
+            <li>Male team members can participate and assist online.</li>
+            <li>
+              Teams comprised entirely of
+              <b>female members are welcome and encouraged</b> to participate.
+            </li>
+            <li>
+              All branches and courses are eligible for participation—<b
+                >diverse backgrounds are encouraged</b
+              >.
+            </li>
+            <li>
+              There is
+              <b>no limit on the number of teams from a single college</b>.
+            </li>
+            <li>
+              Teams are permitted to
+              <b>submit multiple entries for different domains</b>, provided
+              each submission has a <b>different team leader</b>.
+            </li>
+            <li>Each member can only be part of <b>one team per domain</b></li>
+            <li>Each team can submit <b>only one idea per domain</b>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="frame frame3" id="Prizes" style="background-color: white">
+      <div class="name" style="color: #022149">
+        Prizes
+        <br />
+        <!-- <h3>YET TO BE REVEALED.....</h3> -->
+      </div>
+
+      <div class="responsive-image-container">
+        <img src="images/Sponsors/prize.jpg" alt="prize" />
+      </div>
+      <!-- <div class="prizes">
+          <div class="prizes-cont">
+            <div class="prize">
+              <div class="prize-img">
+                <img src="./images/new_logo.png" />
+              </div>
+              <div class="prize-text">First Prize : ₹ 15000 Cash</div>
+            </div>
+            <div class="prize">
+              <div class="prize-img">
+                <img src="./images/new_logo.png" />
+              </div>
+              <div class="prize-text">Second Prize : ₹ 10000 Cash</div>
+            </div>
+            <div class="prize">
+              <div class="prize-img">
+                <img src="./images/new_logo.png" />
+              </div>
+              <div class="prize-text">Third Prize : ₹ 5000 Cash</div>
+            </div>
+            <div class="prize">
+              <div class="prize-img">
+                <img src="./images/new_logo.png" />
+              </div>
+              <div class="prize-text">Most Innovative : ₹ 5000 Cash</div>
+            </div>
+            <div class="prize">
+              <div class="prize-img">
+                <img src="./images/new_logo.png" />
+              </div>
+              <div class="prize-text">Diversity Prize : ₹ 5000 Cash</div>
+            </div>
+            <div class="prize">
+              <div class="prize-img">
+                <img src="./images/new_logo.png" />
+              </div>
+              <div class="prize-text">
+                Best social media post tagging Hack on Hills - Special Schwags
+              </div>
+            </div>
+            <div class="prize">
+              <div class="prize-img">
+                <img
+                  class="img-square"
+                  src="./images/Sponsors/zulip-logo.png"
+                />
+              </div>
+              <div class="prize-text">Best App using Zulip API - 100$</div>
+            </div>
+            <div class="prize">
+              <div class="prize-img">
+                <img src="./images/Sponsors/hasura_logo_horizontal_black.png" />
+              </div>
+              <div class="prize-text">
+                Best App using GraphQL - ₹ 5000 Flipkart Voucher
+              </div>
+            </div>
+            <div class="prize">
+              <div class="prize-img">
+                <img src="./images/Sponsors/Matic_Logo.png" />
+              </div>
+              <div class="prize-text">Best Ethereum App - ₹ 5000 Cash</div>
+            </div>
+      </div>
+        </div> -->
+      <div style="width: 4px"></div>
+      <div class="frame frame7" id="FAQs">
+        <img src="./images/back-4.svg" class="img-back" />
+        <img src="./images/back-5.svg" class="img-back-bottom" />
+        <div class="frame7-content">
+          <div class="name">FAQs</div>
+          <div class="faq">
+            <div class="question">
+              Is this hackathon an online event or offline?
+            </div>
+            <div class="answer">
+              For teams outside of Banasthali, only female participants are
+              allowed to attend the event in person, while male team members can
+              assist their team online during the offline event.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              Is it compulsory to attend the event offline?
+            </div>
+            <div class="answer">
+              Yes, all female team members are required to attend the event in
+              person for the offline round at the Banasthali Campus.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              Does this hackathon have any participation fees for students?
+            </div>
+            <div class="answer">
+              No. The hackathon is free of cost for any student from any college
+              all over the world.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              Are there any special arrangements for international participants?
+            </div>
+            <div class="answer">
+              Yes,international participants can join in physical/hybrid mode.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              Can I participate with other college teams?
+            </div>
+            <div class="answer">
+              No, teams should have members from the same college itself.
+              Inter-college teams are not allowed.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              What are the perks and benefits of participating in this
+              hackathon?
+            </div>
+            <div class="answer">
+              Hackathons provide hands on experience with the experts from
+              different field working on the projects like Blockchain, AI/ML,
+              Machine Learning, etc. This will help to give a head start if any
+              one wants to make project on the field. Along with that the
+              participant will be provided with cool swags and stickers.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              What are the Accommodation Facilities for the participants from
+              outside the college?
+            </div>
+            <div class="answer">
+              Participants will be provided with accommodation and food in the
+              Guest House of the College during the Hackathon Period.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              How to reach Banasthali Vidyapith for the event?
+            </div>
+            <div class="answer">
+              The nearest airport to Banasthali Vidyapith is Jaipur Airport
+              (JAI) which is 50.2 km away from the campus.From Jaipur you can
+              easily find cabs or buses from Sindhi Camp(Bus stand) to reach our
+              campus.The nearest Railway Station is Niwai Station which is 5 km
+              away from the campus.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              I have a question related to hackathon which is not listed above.
+              What should I do?
+            </div>
+            <div class="answer">
+              Feel free to reach us out. You can contact us at
+              <a href="mailto:hackcelestia@gmail.com">hackcelestia@gmail.com</a>.
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="frame frame8">
+      <div class="footer-icons">
+        <a href="https://github.com/HackCelestia" target="__blank"
+          ><img src="./images/github-color.svg"
+        /></a>
+        <a
+          href="https://www.instagram.com/hackcelestia_hackathon/profilecard/?igsh=a3RydWN3MnNkb2Jr"
+          target="__blank"
+          ><img src="./images/insta-color.svg"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/hack-celestia-442540330/"
+          target="__blank"
+          ><img src="./images/linkedin-color.svg"
+        /></a>
+        <a href="mailto:hackcelestia@gmail.com"
+          ><img src="./images/email-color.svg"
+        /></a>
+      </div>
+      <div class="footer-text">
+        <u><a href="Terms and Conditions.docx" target="__blank"> T&C </a></u>
+      </div>
+      <div class="footer-text">&copy; 2024-25 Team Hackcelestia</div>
+      <div class="footer-text">
+        <u
+          ><a href="Privacy Policy.docx" target="__blank">
+            Privacy Policy
+          </a></u
+        >
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const toggleButton = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      const closeButton = document.getElementById("close-menu");
+
+      // Toggle the navbar menu when the hamburger icon is clicked
+      toggleButton.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+
+      // Close the navbar menu when the close button is clicked
+      closeButton.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>
